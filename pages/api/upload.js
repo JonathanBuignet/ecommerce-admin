@@ -39,7 +39,7 @@ export default async function handle(req, res) {
         Bucket: bucketName,
         Key: newFilename,
         Body: fs.readFileSync(file.path),
-        ACL: 'public-rea',
+        ACL: 'public-read',
         ContentType: mime.lookup(file.path),
       })
     );
