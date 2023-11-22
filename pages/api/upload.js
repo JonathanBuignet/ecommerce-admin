@@ -8,7 +8,7 @@ const bucketName = 'john-next-ecommerce';
 
 export default async function handle(req, res) {
   await mongooseConnect();
-  await isAdminRequest(req, res);
+  // await isAdminRequest(req, res);
 
   //? Package pour upload des images
   const form = new multiparty.Form();

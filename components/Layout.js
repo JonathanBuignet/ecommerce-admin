@@ -5,21 +5,21 @@ import Logo from './Logo';
 
 export default function Layout({ children }) {
   const [showNav, setShowNav] = useState(false);
-  const { data: session } = useSession();
-  if (!session) {
-    return (
-      <div className='bg-bgGray flex h-screen w-screen items-center'>
-        <div className='w-full text-center'>
-          <button
-            onClick={() => signIn('google')}
-            className='rounded-lg bg-white p-2 px-4'
-          >
-            Login with Google
-          </button>
-        </div>
-      </div>
-    );
-  }
+  // const { data: session } = useSession();
+  // if (!session) {
+  //   return (
+  //     <div className='bg-bgGray flex h-screen w-screen items-center'>
+  //       <div className='w-full text-center'>
+  //         <button
+  //           onClick={() => signIn('google')}
+  //           className='rounded-lg bg-white p-2 px-4'
+  //         >
+  //           Login with Google
+  //         </button>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className='bg-bgGray min-h-screen'>
