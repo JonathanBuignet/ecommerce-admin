@@ -15,10 +15,10 @@ export default function Home() {
           <br /> Bonne visite !
           {/* <b>{session?.user.name}</b> */}
         </h2>
-        <div className='flex overflow-hidden rounded-lg bg-gray-300 text-black'>
+        {/* <div className='flex overflow-hidden rounded-lg bg-gray-300 text-black'>
           <img src={session?.user?.image} alt='' className='h-6 w-6' />
           <span className='px-2'>{session?.user.name}</span>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

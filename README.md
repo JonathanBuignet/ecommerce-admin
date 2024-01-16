@@ -1,38 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ E-Commerce Administration 🛠️
 
-## Getting Started
+## Description
 
-First, run the development server:
+Bienvenue sur le projet d'administration pour la gestion du site e-commerce vitrine. Ce projet permet d'administrer facilement le contenu du site en ajoutant, modifiant ou supprimant des produits et des catégories. De plus, il offre une visibilité sur les commandes passées par les clients, ainsi que le statut du paiement via Stripe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**Liens vers le panneau d'Administration :** [E-Commerce Administration](https://ecommerce-administration.vercel.app/)  
+Prévoir quelques ralentissement dû à la gratuité des services d'hébergement utilisés.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fonctionnalités
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Ajout, modification et suppression simple des produits et des catégories.
+- Ajout et suppressions d'images via le service S3 d'AWS.
+- Suivi des commandes passées par les clients.
+- Statut du paiement via l'intégration de Stripe.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Authentification
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+L'authentification est prise en charge via NextAuth et Google. Actuellement, cette fonctionnalité est désactivée pour permettre à chacun d'utiliser le projet plus facilement.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Utilisée
 
-## Learn More
+- ReactJS ⚛️
+- NextJS 🚀
+- MongoDB 🍃
+- Tailwind CSS 🎨
+- Mongoose 🏠
+- AWS ☁️
+- Stripe 💳
 
-To learn more about Next.js, take a look at the following resources:
+## Aperçu
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Tous les produits :
+![screen_ecommerce_administration_tous_les_produits](./apercu/screen_ecommerce_administration_tous_les_produits.png)
+Un produit :
+![screen_ecommerce_administration_un_produit](./apercu/screen_ecommerce_administration_un_produit.png)
+Les categories :
+![screen_ecommerce_administration_categories](./apercu/screen_ecommerce_administration_categories.png)
+Les commandes et leur statut de paiement :
+![screen_ecommerce_administration_statut_commandes](./apercu/screen_ecommerce_administration_statut_commandes.png)
